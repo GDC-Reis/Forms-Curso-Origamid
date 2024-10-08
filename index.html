@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <form name="contato" id="contato">
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" id="name" required>
+    <span class="erro"></span>
+    <label for="email">E-mail</label>
+    <input type="email" name="email" id="email" required>
+    <span class="erro"></span>
+    <label for="mensagem">Mensagem</label>
+    <textarea name="mensagem" id="mensagem"></textarea>
+  </form>
+
+  <script>
+    const contato = document.querySelector('#contato');
+    const dados = {};
+
+    function handleChange(event){
+      dados[event.target.name] = event.target.value;
+    };
+
+  </script>
+</body>
+</html>
